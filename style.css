@@ -4,36 +4,42 @@ html body {
 }
 
 body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  color: seashell;
+  background-color: black;
+  font-size: 22px;
+  text-align: center;
 }
 
-.top-section-text h2 {
-  color: seashell;
-}
-
-.top-section-text h4 {
-  color: seashell;
+.top-section-text h2 h3 h4 {
+  margin-top: 10px;
 }
 
 header {
-  font-family: Helvetica;
-  font-size: 22px;
-  background-color: black;
-  display: flex;
-  width: 1250px;
-  height: 69px;
+  width: 100%;
   position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
   border-bottom: 1px solid seashell;
   align-items: center;
-  z-index: 1;
 }
 
-header .logo {
-  flex-grow: 1;
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logo img {
   padding-left: 10px;
   height: 50px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
 }
 
 nav span {
@@ -46,31 +52,79 @@ a {
 }
 
 .content {
-  display: flex;
-  width: 1250px;
-  background-color: black;
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;}
+
+#top-section {
+  background-image: url(images/img-mission-background.jpg);
+  height: 700px;
+  padding-top: 70px;
 }
 
-.content .top-image {
-  display: flex;
-  background-image: url(images/img-mission-background.jpg);
-  width: 1200px;
-  height: 700px;
-  margin: 69px 25px 80px 25px;
-  opacity: 0.9;
-  align-items: center;
-  justify-content: center;
+#top-section .top-section-text {
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}
+
+#mid-section {
+  width: 1000;
+  height: 700;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.month-image {
+  padding: 5px;
+}
+
+.month-image img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  display: block;
+}
+
+.month-image span {
+  display: block;
+  padding-top: 10px;
   text-align: center;
 }
 
-.top-section-text {
-  height: 100px;
+#bottom-section {
+  background-image: url(images/img-locations-background.jpg);
+  height: 500px;
+  margin-top: 70px;
   width: 1200px;
-  background-color: black;
 }
 
-.content .mid-section {
-  display: flex;
-  width: 1000;
-  height: 500;
+#bottom-section h2 {
+  padding-top: 70px;
+  padding-bottom: 15px;
+}
+
+#bottom-section .logo {
+  margin: auto;
+  width: 1100px;
+}
+
+.logo .locations {
+  opacity 1.0;
+  padding-left: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  width: 300px;
+  flex-direction: column
+}
+
+#contact {
+  background-color: black;
+  height: 200px;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
